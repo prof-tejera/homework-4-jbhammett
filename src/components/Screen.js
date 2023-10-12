@@ -2,11 +2,11 @@ const Screen = ({ value }) => {
   return (
     <div
       style={{
-        border: "1px solid black",
+        border: "10px solid #aaaaaa",
         width: 300,
         height: 70,
         textAlign: "right",
-        marginBottom: 10,
+        backgroundColor: "#ffffff"
       }}
     >
       {value}
