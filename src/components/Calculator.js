@@ -29,27 +29,27 @@ const Calculator = () => {
 
   /** TODO: what happens when I click an operation? */
   const handleOperationClick = (value) => {
-    if (value != "="){
+    if (value !== "="){
       setOperator(value);
     }
     
     let answer = null;
-    if (value == "=") {
+    if (value === "=") {
       if (operator == "+"){
         answer = number1 + number2;
       }
-      else if (operator == "-") {
+      else if (operator === "-") {
         answer = number1 - number2;
       }
-      else if (operator == "x"){
+      else if (operator === "x"){
         answer = number1 * number2;
       }
-      else if (operator == "/"){
+      else if (operator === "/"){
         answer = number1 / number2;
       }
       setCurrentNumber(answer);
     }
-    else if (value == "clear"){
+    else if (value === "clear"){
       setNumber1(null);
       setNumber2(null);
       setOperator(null);
