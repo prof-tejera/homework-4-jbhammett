@@ -14,7 +14,7 @@ const Calculator = () => {
 
   /** TODO: what happens when I click a number? */
   const handleNumberClick = (value) => {  
-    if (rotateNumber == 1) {
+    if (rotateNumber === 1) {
       setNumber1(value);
       setCurrentNumber(value);
       setRotateNumber(2);
@@ -35,7 +35,7 @@ const Calculator = () => {
     
     let answer = null;
     if (value === "=") {
-      if (operator == "+"){
+      if (operator === "+"){
         answer = number1 + number2;
       }
       else if (operator === "-") {
